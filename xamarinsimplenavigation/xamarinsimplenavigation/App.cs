@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿using xamarinsimplenavigation.Services;
+using xamarinsimplenavigation.Services.Interfaces;
+using xamarinsimplenavigation.Views;
 using Xamarin.Forms;
 
 namespace xamarinsimplenavigation
@@ -11,20 +9,9 @@ namespace xamarinsimplenavigation
     {
         public App()
         {
+            DependencyService.Register<INavigationService, NavigationService>();
             // The root page of your application
-            MainPage = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
-                }
-            };
+            MainPage = new NavigationPage(new StartPageView()) { BarBackgroundColor = Color.FromHex("#0079B7"), BarTextColor = Color.White };
         }
 
         protected override void OnStart()
