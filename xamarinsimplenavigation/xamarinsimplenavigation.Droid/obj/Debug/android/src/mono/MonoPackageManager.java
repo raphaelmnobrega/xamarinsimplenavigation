@@ -109,8 +109,8 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.v7.RecyclerView.dll",
 		"Xamarin.Android.Support.Vector.Drawable.dll",
 		"Xamarin.Forms.Core.dll",
-		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
+		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Xaml.dll",
 		"Java.Interop.dll",
 		"xamarinsimplenavigation.dll",
@@ -134,8 +134,8 @@ class MonoPackageManager_Resources {
 		"System.Text.RegularExpressions.dll",
 		"System.Collections.Concurrent.dll",
 		"System.Runtime.InteropServices.dll",
-		"System.Resources.ResourceManager.dll",
 		"System.Diagnostics.Tools.dll",
+		"System.Resources.ResourceManager.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

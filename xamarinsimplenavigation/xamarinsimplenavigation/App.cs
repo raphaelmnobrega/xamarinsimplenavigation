@@ -11,7 +11,7 @@ namespace xamarinsimplenavigation
         {
             DependencyService.Register<INavigationService, NavigationService>();
             // The root page of your application
-            MainPage = new NavigationPage(new StartPageView()) { BarBackgroundColor = Color.FromHex("#0079B7"), BarTextColor = Color.White };
+            MainPage = new NavigationPage(new StartPageView());
         }
 
         protected override void OnStart()

@@ -11,28 +11,22 @@ namespace xamarinsimplenavigation.ViewModels
 
 		public StartPageViewModel()
 		{
-			//this.EmailLoginCommand = new Command(this.EmailLogin);
 			this.navigationService = DependencyService.Get<INavigationService>();
 		}
 
-		private ICommand emailLoginCommand;
-		public ICommand EmailLoginCommand
+		private ICommand loginCommand;
+		public ICommand LoginCommand
 		{
 			get
 			{
-				return emailLoginCommand ?? (emailLoginCommand = new Command(() =>
+				return loginCommand ?? (loginCommand = new Command(() =>
 				{
 					navigationService.NavigateToLogin();
+					//navigationService.NavigateToMainPage();
 				}));                                                  
 			}
 
 		}
-
-		//private void EmailLogin()
-		//{
-		//	navigationService.NavigateToLogin();			
-		//}
-
 	}
 }
 

@@ -1,14 +1,18 @@
-﻿using xamarinsimplenavigation.ViewModels;
-using Xamarin.Forms;
+﻿using System;
+using System.Collections.Generic;
 
-namespace xamarinsimplenavigation.Views
+using Xamarin.Forms;
+using xamarinsimplenavigation.ViewModels;
+
+namespace xamarinsimplenavigation
 {
-    public partial class LoginView : ContentPage
-    {
-        public LoginView()
-        {
-            //InitializeComponent();
-            this.BindingContext = new LoginViewModel();
-        }
-    }
+	public partial class LoginView : ContentPage
+	{
+		public LoginView()
+		{
+			InitializeComponent();
+			this.BindingContext = new LoginViewModel();
+		}
+	}
 }
+

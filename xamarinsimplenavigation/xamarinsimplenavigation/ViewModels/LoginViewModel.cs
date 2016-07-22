@@ -1,12 +1,13 @@
-﻿using System.Windows.Input;
+﻿using System;
+using System.Windows.Input;
+using Xamarin.Forms;
 using xamarinsimplenavigation.Services.Interfaces;
 using xamarinsimplenavigation.ViewModels.Base;
 using xamarinsimplenavigation.ViewModels.Entities;
-using Xamarin.Forms;
 
-namespace xamarinsimplenavigation.ViewModels
+namespace xamarinsimplenavigation
 {
-	public class LoginViewModel: TypedViewModelBase<User>
+	public class LoginViewModel : TypedViewModelBase<User>
 	{
 		private readonly INavigationService navigationService;
 
@@ -25,7 +26,7 @@ namespace xamarinsimplenavigation.ViewModels
 					navigationService.NavigateToMainPage();
 				}));
 			}
-				
+
 		}
 
 	}
